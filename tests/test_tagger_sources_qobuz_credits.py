@@ -473,6 +473,49 @@ def test_a_classical_release_credits_its_composers_whatever_no_genres_from_qobuz
     assert got == [[("Alice", "main"), ("Béla Bartók", "composer")]]
 
 
+@pytest.mark.parametrize(
+    ("performers", "composers"),
+    [
+        ("Alice, MainArtist - Carol, Composer, Conductor - Bob, Lyricist", ["Carol"]),
+        ("Alice, MainArtist - Carol, Composer - Dave, ComposerLyricist - Bob, Lyricist", ["Carol", "Dave"]),
+        # Any other role: a performer the line doesn't call Composer.
+        ("Alice, MainArtist - Bob, MainArtist, Piano - Carol, Composer", ["Carol"]),
+    ],
+)
+def test_a_composer_field_naming_someone_the_line_gives_another_role_yields_to_the_line_s_composers(
+    performers: str, composers: list[str]
+) -> None:
+    """West Side Story: the field names Sondheim on 27 tracks, the line Bernstein Composer and Sondheim Lyricist."""
+    data = album(track(performers, composer={"name": "Bob"}), genres=["Classique"])
+
+    got = credits(data)[0]
+
+    assert [name for name, role in got if role == "composer"] == composers
+
+
+@pytest.mark.parametrize(
+    ("performers", "composer"),
+    [
+        # The field spells the line's composer otherwise (Reiner Vienna's "Johann Strauss II"): the field's spelling.
+        ("Alice, MainArtist - Johann Strauss, Jr., Composer", "Johann Strauss II"),
+        # The field names a composer the line also gives as lyricist.
+        ("Alice, MainArtist - Bob, Composer, Lyricist", "Bob"),
+        # The line gives the field's name another role and names no composer.
+        ("Alice, MainArtist - Bob, Lyricist", "Bob"),
+        ("Bob, MainArtist", "Bob"),
+    ],
+)
+def test_as_before_a_composer_field_is_credited_unless_the_line_names_another_composer_and_gives_it_another_role(
+    performers: str, composer: str
+) -> None:
+    """The field's spelling of a composer is kept wherever the line doesn't say the field's name is someone else's."""
+    data = album(track(performers, composer={"name": composer}), genres=["Classique"])
+
+    got = credits(data)[0]
+
+    assert [name for name, role in got if role == "composer"] == [composer]
+
+
 @pytest.mark.parametrize("genres", [["Pop/Rock"], ["Jazz"], ["Électronique→Dance"], ["Bandes originales de films"]])
 def test_as_before_a_release_that_is_not_classical_credits_no_composer_or_conductor(genres: list[str]) -> None:
     """Composers and conductors are read on a classical release alone (EXTRA_ROLES), as RED credits them."""

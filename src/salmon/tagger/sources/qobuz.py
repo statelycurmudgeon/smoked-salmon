@@ -651,9 +651,13 @@ def _track_credits(
     claims.extend(read)
     claims.extend((guest, "guest", True) for guest in guests_from_title(track.get("title") or ""))
     if "composer" in extra:
-        # The composer field's spelling ("Béla Bartók") over the line's ("Bela Bartok"); the line's when it has none.
+        # The composer field's spelling ("Béla Bartók") over the line's ("Bela Bartok"); the line's when it has none,
+        # or when the line gives the field's name another role and names a composer (West Side Story's field
+        # "Stephen Sondheim", the line's Lyricist, beside the line's Composer Leonard Bernstein).
         composer = str(safe_get(track, ["composer", "name"]) or "").strip()
-        claims.extend((name, "composer", False) for name in ([composer] if composer else line_composers))
+        composers = {_key(name) for name in line_composers}
+        from_line = not composer or bool(composers and _key(composer) in on_line - composers)
+        claims.extend((name, "composer", False) for name in (line_composers if from_line else [composer]))
     return _credits_and_guesses(claims)
 
 
