@@ -20,6 +20,10 @@ how_we_know = "Deezer, MusicBrainz, Discogs and Qobuz all credit Rostropovich, t
 release = ["Mstislav Rostropovich (main)", "Berliner Philharmoniker (main)", "Herbert von Karajan (main)", "Antonín Dvořák (main)", "Herbert von Karajan (conductor)", "Antonín Dvořák (composer)", "Pyotr Ilyich Tchaikovsky (main)", "Pyotr Ilyich Tchaikovsky (composer)"]
 tracks = 12
 
+[today.deezer-alone]
+release = ["Mstislav Rostropovich (main)", "Berliner Philharmoniker (main)", "Herbert von Karajan (conductor)", "Antonín Dvořák (composer)", "Pyotr Ilyich Tchaikovsky (composer)"]
+tracks = 12
+
 [today.musicbrainz]
 release = ["Мстислав Ростропович (main)", "Berliner Philharmoniker (main)", "Herbert von Karajan (main)"]
 tracks = 12
@@ -30,6 +34,10 @@ tracks = 0
 
 [today.qobuz]
 release = ["Mstislav Rostropovich (main)", "Berliner Philharmoniker (main)", "Herbert von Karajan (main)", "Herbert von Karajan (conductor)", "Antonín Dvořák (composer)", "Pyotr Illitch Tchaïkovski (composer)"]
+tracks = 12
+
+[today.qobuz-alone]
+release = ["Mstislav Rostropovich (main)", "Berliner Philharmoniker (main)", "Herbert von Karajan (conductor)", "Antonín Dvořák (composer)", "Pyotr Illitch Tchaïkovski (composer)"]
 tracks = 12
 
 [today.merge]

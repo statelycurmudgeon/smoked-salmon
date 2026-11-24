@@ -23,6 +23,10 @@ how_we_know = "Qobuz and Deezer both give Asking Alexandria alone as the album's
 release = ["Asking Alexandria (main)", "Weird Genius (main)", "Weird Genius (remixer)", "Kodeblooded (remixer)", "Cass Dillon (remixer)", "Fairlane (main)", "Fairlane (remixer)", "Sullivan King (main)", "Sullivan King (remixer)"]
 tracks = 7
 
+[today.deezer-alone]
+release = ["Asking Alexandria (main)", "Weird Genius (remixer)", "Kodeblooded (remixer)", "Cass Dillon (remixer)", "Fairlane (remixer)", "Sullivan King (remixer)"]
+tracks = 7
+
 [today.qobuz]
 release = ["Asking Alexandria (main)", "Weird Genius (remixer)", "Kodeblooded (remixer)", "Cass Dillon (remixer)", "Fairlane (remixer)", "Sullivan King (remixer)"]
 tracks = 7

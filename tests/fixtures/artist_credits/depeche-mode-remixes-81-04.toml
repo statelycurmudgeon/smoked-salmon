@@ -21,8 +21,16 @@ how_we_know = "The slipcase back lists each track's mix and who remixed it (the 
 release = ["Depeche Mode (main)", "Air (remixer)", "Daniel Miller (remixer)", "Rico Conning (remixer)", "Jack Dangers (remixer)", "Renegade Soundwave (remixer)", "Underworld (remixer)", "The Beatmasters (remixer)", "DJ Muggs (remixer)", "Thomas Brinkmann (remixer)", "Jon Marsh (remixer)", "Alan Moulder (remixer)", "DJ Shadow (main)", "DJ Shadow (remixer)", "Kruder & Dorfmeister (remixer)", "Speedy J (remixer)"]
 tracks = 37
 
+[today.deezer-alone]
+release = ["Depeche Mode (main)", "Air (remixer)", "Daniel Miller (remixer)", "Rico Conning (remixer)", "Jack Dangers (remixer)", "Renegade Soundwave (remixer)", "Underworld (remixer)", "The Beatmasters (remixer)", "DJ Muggs (remixer)", "Thomas Brinkmann (remixer)", "Jon Marsh (remixer)", "Alan Moulder (remixer)", "DJ Shadow (remixer)", "Kruder & Dorfmeister (remixer)", "Speedy J (remixer)"]
+tracks = 37
+
 [today.musicbrainz]
 release = ["Depeche Mode (main)", "David Bascombe (remixer)", "Depeche Mode (remixer)", "François K (remixer)", "Air (remixer)", "Stéphane Briat (remixer)", "Rico Conning (remixer)", "Daniel Miller (remixer)", "Jack Dangers (remixer)", "Meat Beat Manifesto (remixer)", "Danny Briottet (remixer)", "Renegade Soundwave (remixer)", "Underworld (remixer)", "The Beatmasters (remixer)", "DJ Muggs (remixer)", "Chamber (remixer)", "Paul Freegard (remixer)", "Doug Hart (remixer)", "Jon Marsh (remixer)", "Alan Moulder (remixer)", "DJ Shadow (main)", "DJ Shadow (remixer)", "Kruder & Dorfmeister (remixer)", "Jonny Dollar (remixer)", "Portishead (remixer)", "Dave Clarke (remixer)", "Speedy J (remixer)", "Adrian Sherwood (remixer)", "Martin Buttrich (remixer)", "Timo Maas (remixer)", "Flood (remixer)", "Ulrich Schnauss (remixer)", "Headcleanr (remixer)", "Goldfrapp (remixer)", "Mike Shinoda (remixer)"]
+tracks = 37
+
+[today.musicbrainz-alone]
+release = ["Depeche Mode (main)", "David Bascombe (remixer)", "Depeche Mode (remixer)", "François K (remixer)", "Air (remixer)", "Stéphane Briat (remixer)", "Rico Conning (remixer)", "Daniel Miller (remixer)", "Jack Dangers (remixer)", "Meat Beat Manifesto (remixer)", "Danny Briottet (remixer)", "Renegade Soundwave (remixer)", "Underworld (remixer)", "The Beatmasters (remixer)", "DJ Muggs (remixer)", "Chamber (remixer)", "Paul Freegard (remixer)", "Doug Hart (remixer)", "Jon Marsh (remixer)", "Alan Moulder (remixer)", "DJ Shadow (remixer)", "Kruder & Dorfmeister (remixer)", "Jonny Dollar (remixer)", "Portishead (remixer)", "Dave Clarke (remixer)", "Speedy J (remixer)", "Adrian Sherwood (remixer)", "Martin Buttrich (remixer)", "Timo Maas (remixer)", "Flood (remixer)", "Ulrich Schnauss (remixer)", "Headcleanr (remixer)", "Goldfrapp (remixer)", "Mike Shinoda (remixer)"]
 tracks = 37
 
 [today.discogs]

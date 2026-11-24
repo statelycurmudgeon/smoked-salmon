@@ -19,6 +19,10 @@ how_we_know = "Qobuz credits Puccini as the composer; RED's guidance on classica
 release = ["Rolando Panerai (main)", "Luciano Pavarotti (main)", "Nicolai Ghiaurov (main)", "Berliner Philharmoniker (main)", "Herbert von Karajan (main)", "Giacomo Puccini (main)", "Herbert von Karajan (conductor)", "Giacomo Puccini (composer)", "Gianni Maffeo (main)", "Michel Sénéchal (main)", "Mirella Freni (main)", "Schöneberger Sängerknaben (main)", "Chor der Deutschen Oper Berlin (main)", "Gernot Pietsch (main)", "Elizabeth Harwood (main)", "Hans-Dietrich Pohl (main)", "Hans-Dieter Appell (main)"]
 tracks = 31
 
+[today.deezer-alone]
+release = ["Rolando Panerai (main)", "Luciano Pavarotti (main)", "Nicolai Ghiaurov (main)", "Berliner Philharmoniker (main)", "Herbert von Karajan (conductor)", "Giacomo Puccini (composer)", "Gianni Maffeo (main)", "Michel Sénéchal (main)", "Mirella Freni (main)", "Schöneberger Sängerknaben (main)", "Chor der Deutschen Oper Berlin (main)", "Gernot Pietsch (main)", "Elizabeth Harwood (main)", "Hans-Dietrich Pohl (main)", "Hans-Dieter Appell (main)"]
+tracks = 31
+
 [today.musicbrainz]
 release = ["Walter Hagen-Groll (main)", "Chor der Deutschen Oper Berlin (main)", "Nicolaï Ghiaurov (main)", "Rolando Panerai (main)", "Luciano Pavarotti (main)", "Schöneberger Sängerknaben (main)", "Berliner Philharmoniker (main)", "Herbert von Karajan (main)", "Gianni Maffeo (main)", "Michel Sénéchal (main)", "Mirella Freni (main)", "Gernot Pietsch (main)", "Elizabeth Harwood (main)", "Hans-Dietrich Pohl (main)", "Hans-Dieter Appelt (main)"]
 tracks = 31

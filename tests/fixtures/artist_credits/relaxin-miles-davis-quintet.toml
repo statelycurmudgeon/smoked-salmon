@@ -34,6 +34,10 @@ tracks = 6
 release = ["Miles Davis Quintet (main)", "The Miles Davis Quintet (guest)"]
 tracks = 6
 
+[today.qobuz-alone]
+release = ["Miles Davis Quintet (main)"]
+tracks = 6
+
 [today.merge]
 release = ["The Miles Davis Quintet (main)"]
 tracks = 6

@@ -23,6 +23,10 @@ how_we_know = "Deezer, MusicBrainz and Qobuz all credit the orchestra and Reiner
 release = ["Fritz Reiner (main)", "Vienna Philharmonic (main)", "Fritz Reiner (conductor)", "Johannes Brahms (composer)", "Antonín Dvořák (composer)", "Fritz Reiner (composer)"]
 tracks = 13
 
+[today.deezer-alone]
+release = ["Vienna Philharmonic (main)", "Fritz Reiner (conductor)", "Johannes Brahms (composer)", "Antonín Dvořák (composer)", "Fritz Reiner (composer)"]
+tracks = 13
+
 [today.musicbrainz]
 release = ["Wiener Philharmoniker (main)", "Fritz Reiner (main)"]
 tracks = 13

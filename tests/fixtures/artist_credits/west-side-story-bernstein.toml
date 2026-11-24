@@ -20,6 +20,10 @@ open = "Whether the singers are credited on every track or per track: Deezer and
 release = ["Leonard Bernstein Orchestra (main)", "Leonard Bernstein (main)", "Leonard Bernstein (conductor)", "Leonard Bernstein (composer)", "Kurt Ollmann (main)", "David Livingston (main)", "Stephen Bogardus (main)", "Peter Thom (main)", "Marty Nelson (main)", "José Carreras (main)", "Nina Bernstein (main)", "Alexander Bernstein (main)", "Kiri Te Kanawa (main)", "Angelina Reaux (main)", "Louise Edeiken (main)", "Stella Zambalis (main)", "Tatiana Troyanos (main)", "Richard Harrell (main)", "Marilyn Horne (main)", "Todd Lester (main)", "Israel Philharmonic Orchestra (main)"]
 tracks = 33
 
+[today.deezer-alone]
+release = ["Leonard Bernstein Orchestra (main)", "Leonard Bernstein (conductor)", "Leonard Bernstein (composer)", "Kurt Ollmann (main)", "David Livingston (main)", "Stephen Bogardus (main)", "Peter Thom (main)", "Marty Nelson (main)", "José Carreras (main)", "Nina Bernstein (main)", "Alexander Bernstein (main)", "Kiri Te Kanawa (main)", "Angelina Reaux (main)", "Louise Edeiken (main)", "Stella Zambalis (main)", "Tatiana Troyanos (main)", "Richard Harrell (main)", "Marilyn Horne (main)", "Todd Lester (main)", "Israel Philharmonic Orchestra (main)"]
+tracks = 33
+
 [today.musicbrainz]
 release = ["Leonard Bernstein (main)", "Kurt Ollmann (main)", "David Livingston (main)", "Peter Thom (main)", "Stephen Bogardus (main)", "José Carreras (main)", "Kiri Te Kanawa (main)", "Tatiana Troyanos (main)", "Louise Edeiken (main)", "התזמורת הפילהרמונית הישראלית (main)", "Richard Harrell (main)", "Stella Zambalis (main)", "Angelina Réaux (main)", "Marilyn Horne (main)", "Marty Nelson (main)", "Todd Lester (main)"]
 tracks = 33

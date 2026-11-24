@@ -11,6 +11,8 @@ Each `<album>.toml` holds, in this order:
   the release's artists as "name (role)" and the track count, and for the merge also `credits`, each track's as
   "disc.track: name (role), ...", so a change on one track is seen. **The test enforces these.** For a store that
   states its credits (`states_credits`), `today.<store>` is the undecided scrape the merge receives.
+  `today.<store>-alone` is that scrape used alone, as `salmon meta` and the web lookup decide it (`decide_alone`),
+  recorded only where it differs from `today.<store>`; where it is not recorded, the test holds it to that stage.
   With `output = true`, also `today.output` and `today.output-guests-in-title`: what is written from the merge with
   `guests_in_track_title` off and on, as ALBUMARTIST and per track "ARTIST | TITLE" (and "| REMIXER ..." when one is
   written). With `[[picard_track]]`, also `today.merge-picard` and (with `output = true`) `today.output-picard`: the
@@ -54,8 +56,10 @@ Each `<album>.toml` holds, in this order:
 `pytest -s tests/test_artist_credit_casebook.py::test_scoreboard` prints each case and stage as right, open
 (nothing settled) or what is wrong ("a right main missing", "an extra main", ...), then "right on N of M" by what is
 settled, once for the parse and merge stages and once for the output stages (an output mostly repeats its merge's
-defects, so it is counted apart), and once each for the Picard merge and output stages, over every case with
-`[[picard_track]]` whether its Picard stage is recorded or the same as the Deezer one, and the count of each kind. Right means right on what `[right]` settles; guests are not judged yet. It
+defects, so it is counted apart), once for the alone stages, every store's whether recorded or not, and once each
+for the Picard merge and output stages, over every case with `[[picard_track]]` whether its Picard stage is recorded
+or the same as the Deezer one, and the count of each kind. Right means right on what `[right]` settles; guests are
+not judged yet. It
 never fails on a wrong credit. An output stage is judged on ALBUMARTIST and each track's ARTIST before its "(feat. ...)": the one
 release main there, and no `not_main` name.
 
@@ -66,7 +70,8 @@ set that `[today.<stage>]` to it in the same PR, and update `known_wrong`. The d
 moved, and the scoreboard's count shows whether it moved them towards `right`.
 
 A fix that moves `today.merge` or `today.output` but not its Picard stage asks you to set `[today.merge-picard]` or
-`[today.output-picard]` to the old value; one that makes them the same again asks you to remove it.
+`[today.output-picard]` to the old value; one that makes them the same again asks you to remove it. A store's
+`[today.<store>-alone]` works the same way beside `[today.<store>]`.
 
 ## Constructed cases
 
